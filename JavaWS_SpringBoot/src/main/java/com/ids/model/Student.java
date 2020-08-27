@@ -3,8 +3,6 @@
  */
 package com.ids.model;
 
-import java.util.Date;
-
 /**
  * @author danhnc
  *
@@ -15,12 +13,12 @@ public class Student {
 	
 	private String email;
 	
-	private Date birthdate;
+	private String address;
 	
-	public Student(String name, String email, Date birth) {
+	public Student(String name, String email, String address) {
 		this.name = name;
 		this.email = email;
-		this.birthdate = birth;
+		this.address = address;
 	}
 
 	/**
@@ -51,17 +49,11 @@ public class Student {
 		this.email = email;
 	}
 
-	/**
-	 * @return the birthdate
-	 */
-	public Date getBirthdate() {
-		return birthdate;
+	public String getAddress() {
+		return address;
 	}
 
-	/**
-	 * @param birthdate the birthdate to set
-	 */
-	public void setBirthdate(Date birthdate) {
-		this.birthdate = birthdate;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 }
