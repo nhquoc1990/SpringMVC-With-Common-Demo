@@ -1,6 +1,9 @@
 package com.ids.service;
 
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,8 +21,28 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public Student login(String username, String password) {
 		TUser user = tUserRepository.loginAsStudent(username, password);
-		Student student = new Student(user.getFullname(), user.getEmai(), new Date());
+		Student student = new Student(user.getFullname(), user.getEmai(), user.getAddress());
 		return student;
+	}
+
+	@Override
+	public List<Student> getAllStudents() {
+		List<Student> result = new ArrayList<>();
+		List<TUser> listUsers = StreamSupport.stream(tUserRepository.findAll().spliterator(), false).collect(Collectors.toList());
+		listUsers.forEach((user) -> {
+			result.add(new Student(user.getFullname(), user.getEmai(), user.getAddress()));
+		});
+		return result;
+	}
+
+	@Override
+	public List<Student> getListUserByName(String name) {
+		List<Student> result = new ArrayList<>();
+		List<TUser> listUsers = tUserRepository.searchByName(name);
+		listUsers.forEach((user) -> {
+			result.add(new Student(user.getFullname(), user.getEmai(), user.getAddress()));
+		});
+		return result;
 	}
 
 }
