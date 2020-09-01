@@ -1,6 +1,10 @@
-C:\Users\User\eclipse-workspace-phase3-app\JavaWS_Core\src\main\java\com\ids\common\springmvc\model\Student.java
-C:\Users\User\eclipse-workspace-phase3-app\JavaWS_Core\src\main\java\com\ids\common\springmvc\service\StudentService.java
-C:\Users\User\eclipse-workspace-phase3-app\JavaWS_Core\src\main\java\com\ids\common\springmvc\service\StudentServiceImpl.java
-C:\Users\User\eclipse-workspace-phase3-app\JavaWS_Core\src\main\java\com\ids\common\springmvc\dao\StudentDaoImpl.java
-C:\Users\User\eclipse-workspace-phase3-app\JavaWS_Core\src\main\java\com\ids\common\springmvc\dao\AbstractDao.java
-C:\Users\User\eclipse-workspace-phase3-app\JavaWS_Core\src\main\java\com\ids\common\springmvc\dao\StudentDao.java
+D:\JavaWS_SpringMVC\JavaWS_Core\src\main\java\com\ids\common\entity\TCourse.java
+D:\JavaWS_SpringMVC\JavaWS_Core\src\main\java\com\ids\common\entity\TUser.java
+D:\JavaWS_SpringMVC\JavaWS_Core\src\main\java\com\ids\common\springmvc\dao\AbstractDao.java
+D:\JavaWS_SpringMVC\JavaWS_Core\src\main\java\com\ids\common\entity\TUserCourse.java
+D:\JavaWS_SpringMVC\JavaWS_Core\src\main\java\com\ids\common\entity\TClass.java
+D:\JavaWS_SpringMVC\JavaWS_Core\src\main\java\com\ids\common\springmvc\dao\StudentDao.java
+D:\JavaWS_SpringMVC\JavaWS_Core\src\main\java\com\ids\common\springmvc\dao\StudentDaoImpl.java
+D:\JavaWS_SpringMVC\JavaWS_Core\src\main\java\com\ids\common\springmvc\service\StudentService.java
+D:\JavaWS_SpringMVC\JavaWS_Core\src\main\java\com\ids\common\springmvc\service\StudentServiceImpl.java
+D:\JavaWS_SpringMVC\JavaWS_Core\src\main\java\com\ids\common\springmvc\model\Student.java
